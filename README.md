@@ -22,9 +22,7 @@ Or install it yourself as:
 
 ```ruby
 Languages::Language['ruby'] #=> <Languages::Language name=Ruby color=#701516>
-```
 
-```ruby
 Languages::Language.all #=> [#<Languages::Language name=ActionScript color=#e3491a>, ..]
 ```
 
