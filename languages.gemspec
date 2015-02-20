@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Languages::VERSION
   spec.authors       = ["Andrew Nesbitt"]
   spec.email         = ["andrewnez@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = "Github languages and colors"
+  spec.description   = "Just the language names and colors from github-lingust"
+  spec.homepage      = "https://github.com/andrew/languages"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

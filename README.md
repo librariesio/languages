@@ -1,6 +1,6 @@
 # Languages
 
-TODO: Write a gem description
+Just the language names and colors extracted from [github-lingust](https://github.com/github/linguist), avoiding the heavy dependencies like `charlock_holmes` which doesn't install well on heroku.
 
 ## Installation
 
@@ -20,11 +20,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+Languages::Language['ruby'] #=> <Languages::Language name=Ruby color=#701516>
+```
+
+```ruby
+Languages::Language.all #=> [#<Languages::Language name=ActionScript color=#e3491a>, ..]
+```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/languages/fork )
+1. Fork it ( https://github.com/andrew/languages/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
