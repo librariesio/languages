@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["andrewnez@gmail.com"]
   spec.summary       = "Github languages and colors"
   spec.description   = "Just the language names and colors from github-lingust"
-  spec.homepage      = "https://github.com/andrew/languages"
+  spec.homepage      = "https://github.com/librariesio/languages"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
