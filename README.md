@@ -2,6 +2,8 @@
 
 Just the language names and colors extracted from [github-lingust](https://github.com/github/linguist), avoiding the heavy dependencies like `charlock_holmes` which doesn't install well on heroku.
 
+http://libraries.io/rubygems/languages
+
 ## Installation
 
 Add this line to your application's Gemfile:
