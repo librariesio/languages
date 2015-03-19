@@ -150,7 +150,6 @@ ApacheConf:
   - apache
   extensions:
   - .apacheconf
-  - .conf
   tm_scope: source.apache-config
   ace_mode: apache_conf
 
@@ -738,6 +737,7 @@ Dart:
 
 Diff:
   type: programming
+  color: "#88dddd"
   extensions:
   - .diff
   - .patch
@@ -929,6 +929,13 @@ Fantom:
   extensions:
   - .fan
   tm_scope: source.fan
+  ace_mode: text
+
+Formatted:
+  type: data
+  extensions:
+  - .for
+  tm_scope: none
   ace_mode: text
 
 Forth:
@@ -1259,6 +1266,7 @@ Haml:
 
 Handlebars:
   type: markup
+  color: "#01a9d6"
   aliases:
   - hbs
   - htmlbars
