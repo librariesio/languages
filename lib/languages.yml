@@ -515,6 +515,7 @@ Clojure:
   color: "#db5855"
   extensions:
   - .clj
+  - .boot
   - .cl2
   - .cljc
   - .cljs
@@ -710,6 +711,8 @@ DM:
 
 DTrace:
   type: programming
+  aliases:
+  - dtrace-script
   extensions:
   - .d
   interpreters:
@@ -718,7 +721,7 @@ DTrace:
   ace_mode: c_cpp
 
 Darcs Patch:
-  type: programming
+  type: data
   search_term: dpatch
   aliases:
   - dpatch
@@ -736,13 +739,14 @@ Dart:
   ace_mode: dart
 
 Diff:
-  type: programming
+  type: data
   color: "#88dddd"
   extensions:
   - .diff
   - .patch
   aliases:
   - udiff
+  tm_scope: source.diff
   ace_mode: diff
 
 Dockerfile:
@@ -820,6 +824,8 @@ Elixir:
   - .ex
   - .exs
   ace_mode: elixir
+  filenames:
+  - mix.lock
 
 Elm:
   type: programming
@@ -1156,7 +1162,7 @@ Graphviz (DOT):
   ace_mode: text
 
 Groff:
-  type: programming
+  type: markup
   extensions:
   - .man
   - '.1'
@@ -1726,7 +1732,7 @@ LoomScript:
 Lua:
   type: programming
   ace_mode: lua
-  color: "#fa1fa1"
+  color: "#000080"
   extensions:
   - .lua
   - .fcgi
@@ -1953,6 +1959,24 @@ Nemerle:
   - .n
   ace_mode: text
 
+NetLinx:
+  type: programming
+  color: "#0000ff"
+  extensions:
+  - .axs
+  - .axi
+  tm_scope: source.netlinx
+  ace_mode: text
+
+NetLinx+ERB:
+  type: programming
+  color: "#407fff"
+  extensions:
+  - .axs.erb
+  - .axi.erb
+  tm_scope: source.netlinx.erb
+  ace_mode: text
+
 NetLogo:
   type: programming
   color: "#ff2b2b"
@@ -2053,6 +2077,10 @@ OCaml:
   - .mli
   - .mll
   - .mly
+  interpreters:
+  - ocaml
+  - ocamlrun
+  tm_scope: source.ocaml
 
 ObjDump:
   type: data
@@ -2592,6 +2620,8 @@ Racket:
   - .rktd
   - .rktl
   - .scrbl
+  interpreters:
+  - racket
   tm_scope: source.racket
   ace_mode: lisp
 
@@ -2626,6 +2656,7 @@ Rebol:
   - .r3
   - .rebol
   ace_mode: text
+  tm_scope: source.rebol
 
 Red:
   type: programming
@@ -2635,7 +2666,7 @@ Red:
   - .reds
   aliases:
   - red/system
-  tm_scope: none
+  tm_scope: source.red
   ace_mode: text
 
 Redcode:
@@ -2845,7 +2876,6 @@ Scheme:
   - .ss
   interpreters:
   - guile
-  - racket
   - bigloo
   - chicken
   ace_mode: scheme
@@ -3202,12 +3232,15 @@ VimL:
   search_term: vim
   aliases:
   - vim
+  - nvim
   extensions:
   - .vim
   filenames:
+  - .nvimrc
   - .vimrc
   - _vimrc
   - gvimrc
+  - nvimrc
   - vimrc
   ace_mode: text
 
@@ -3303,6 +3336,7 @@ XML:
   - .rss
   - .scxml
   - .srdf
+  - .storyboard
   - .stTheme
   - .sublime-snippet
   - .targets
@@ -3326,6 +3360,7 @@ XML:
   - .x3d
   - .xacro
   - .xaml
+  - .xib
   - .xlf
   - .xliff
   - .xmi
