@@ -118,7 +118,8 @@ Ada:
   - .ada
   - .ads
   aliases:
-  - ada95ada2005
+  - ada95
+  - ada2005
   ace_mode: ada
 
 Agda:
@@ -935,6 +936,14 @@ Fantom:
   extensions:
   - .fan
   tm_scope: source.fan
+  ace_mode: text
+
+Filterscript:
+  type: programming
+  group: RenderScript
+  extensions:
+  - .fs
+  tm_scope: none
   ace_mode: text
 
 Formatted:
@@ -2676,6 +2685,14 @@ Redcode:
   tm_scope: none
   ace_mode: text
 
+RenderScript:
+  type: programming
+  extensions:
+  - .rs
+  - .rsh
+  tm_scope: none
+  ace_mode: text
+
 RobotFramework:
   type: programming
   extensions:
@@ -2984,6 +3001,7 @@ SourcePawn:
 
 Squirrel:
   type: programming
+  color: "#800000"
   extensions:
   - .nut
   tm_scope: source.c++
@@ -3116,6 +3134,8 @@ Tea:
 Text:
   type: prose
   wrap: true
+  aliases:
+  - fundamental
   extensions:
   - .txt
   - .fr
@@ -3326,6 +3346,7 @@ XML:
   - .mxml
   - .nproj
   - .nuspec
+  - .odd
   - .osm
   - .plist
   - .pluginspec
