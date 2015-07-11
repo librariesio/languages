@@ -49,6 +49,7 @@ AMPL:
   color: "#E6EFBB"
   extensions:
   - .ampl
+  - .mod
   tm_scope: source.ampl
   ace_mode: text
 
@@ -225,6 +226,7 @@ Assembly:
   extensions:
   - .asm
   - .a51
+  - .inc
   - .nasm
   tm_scope: source.asm.x86
   ace_mode: assembly_x86
@@ -411,6 +413,7 @@ C++:
   - .hh
   - .hpp
   - .hxx
+  - .inc
   - .inl
   - .ipp
   - .tcc
@@ -1269,6 +1272,7 @@ HTML:
   - .html
   - .htm
   - .html.hl
+  - .inc
   - .st
   - .xht
   - .xhtml
@@ -1359,7 +1363,7 @@ Haskell:
 Haxe:
   type: programming
   ace_mode: haxe
-  color: "#f7941e"
+  color: "#df7900"
   extensions:
   - .hx
   - .hxsl
@@ -1473,6 +1477,14 @@ Isabelle:
   extensions:
   - .thy
   tm_scope: source.isabelle.theory
+  ace_mode: text
+
+Isabelle ROOT:
+  type: programming
+  group: Isabelle
+  filenames:
+  - ROOT
+  tm_scope: source.isabelle.root
   ace_mode: text
 
 J:
@@ -1638,7 +1650,7 @@ Kit:
 
 Kotlin:
   type: programming
-  color: "#EA4DFA"
+  color: "#F18E33"
   extensions:
   - .kt
   - .ktm
@@ -1756,6 +1768,13 @@ Linker Script:
   - .lds
   filenames:
   - ld.script
+  tm_scope: none
+  ace_mode: text
+
+Linux Kernel Module:
+  type: data
+  extensions:
+  - .mod
   tm_scope: none
   ace_mode: text
 
@@ -2023,6 +2042,13 @@ Modelica:
   extensions:
   - .mo
   tm_scope: source.modelica
+  ace_mode: text
+
+Modula-2:
+  type: programming
+  extensions:
+  - .mod
+  tm_scope: source.modula2
   ace_mode: text
 
 Module Management System:
@@ -2357,6 +2383,7 @@ PHP:
   - .aw
   - .ctp
   - .fcgi
+  - .inc
   - .php3
   - .php4
   - .php5
@@ -2444,6 +2471,7 @@ Pascal:
   - .pas
   - .dfm
   - .dpr
+  - .inc
   - .lpr
   - .pp
   ace_mode: pascal
@@ -2768,7 +2796,7 @@ Racket:
 
 Ragel in Ruby Host:
   type: programming
-  color: "#e17600"
+  color: "#9d5200"
   extensions:
   - .rl
   aliases:
@@ -2919,6 +2947,25 @@ SCSS:
   extensions:
   - .scss
 
+SMT:
+  type: programming
+  extensions:
+  - .smt2
+  - .smt
+  interpreters:
+  - boolector
+  - cvc4
+  - mathsat5
+  - opensmt
+  - smtinterpol
+  - smt-rat
+  - stp
+  - verit
+  - yices2
+  - z3
+  tm_scope: source.smt
+  ace_mode: text
+
 SPARQL:
   type: data
   tm_scope: source.sparql
@@ -2944,6 +2991,7 @@ SQL:
   - .sql
   - .cql
   - .ddl
+  - .inc
   - .prc
   - .tab
   - .udf
@@ -3142,6 +3190,7 @@ SourcePawn:
   - sourcemod
   extensions:
   - .sp
+  - .inc
   - .sma
   tm_scope: source.sp
   ace_mode: text
@@ -3506,6 +3555,7 @@ XML:
   - .launch
   - .mdpolicy
   - .mm
+  - .mod
   - .mxml
   - .nproj
   - .nuspec
