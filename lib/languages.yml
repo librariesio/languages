@@ -501,6 +501,13 @@ Chapel:
   - .chpl
   ace_mode: text
 
+Charity:
+  type: programming
+  extensions:
+    - .ch
+  tm_scope: none
+  ace_mode: text
+
 ChucK:
   type: programming
   extensions:
@@ -1260,6 +1267,14 @@ Groovy Server Pages:
   - .gsp
   tm_scope: text.html.jsp
   ace_mode: jsp
+
+HCL:
+  type: programming
+  extensions:
+    - .hcl
+    - .tf
+  ace_mode: ruby
+  tm_scope: source.ruby
 
 HTML:
   type: markup
@@ -2091,6 +2106,14 @@ Myghty:
   tm_scope: none
   ace_mode: text
 
+NCL:
+  type: programming
+  color: #28431f
+  extensions:
+  - .ncl
+  tm_scope: source.ncl
+  ace_mode: text
+
 NL:
   type: data
   extensions:
@@ -2659,7 +2682,7 @@ PureScript:
   color: "#1D222D"
   extensions:
   - .purs
-  tm_scope: source.haskell
+  tm_scope: source.purescript
   ace_mode: haskell
 
 Python:
@@ -3336,6 +3359,7 @@ Text:
   extensions:
   - .txt
   - .fr
+  - .ncl
   tm_scope: none
   ace_mode: text
 
@@ -3500,6 +3524,14 @@ Volt:
   tm_scope: source.d
   ace_mode: d
 
+Vue:
+  type: markup
+  color: "#2c3e50"
+  extensions:
+  - .vue
+  tm_scope: text.html.vue
+  ace_mode: html
+
 Web Ontology Language:
   type: markup
   color: "#9cc9dd"
@@ -3611,6 +3643,14 @@ XML:
   - Web.Release.config
   - Web.config
   - packages.config
+
+XPages:
+  type: programming
+  extensions:
+  - .xsp-config
+  - .xsp.metadata
+  tm_scope: none
+  ace_mode: xml
 
 XProc:
   type: programming
