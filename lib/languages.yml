@@ -750,6 +750,14 @@ DM:
   tm_scope: source.c++
   ace_mode: c_cpp
 
+DNS Zone:
+  type: data
+  extensions:
+  - .zone
+  - .arpa
+  tm_scope: text.zone_file
+  ace_mode: text
+
 DTrace:
   type: programming
   aliases:
@@ -1933,6 +1941,7 @@ Makefile:
   - GNUmakefile
   - Kbuild
   - Makefile
+  - Makefile.inc
   - makefile
   interpreters:
   - make
@@ -2653,7 +2662,7 @@ Public Key:
 
 Puppet:
   type: programming
-  color: "#332A77"
+  color: "#302B6D"
   extensions:
   - .pp
   filenames:
@@ -2933,6 +2942,7 @@ Ruby:
   - .pryrc
   - Appraisals
   - Berksfile
+  - Brewfile
   - Buildfile
   - Deliverfile
   - Fastfile
@@ -3181,6 +3191,7 @@ Slim:
   color: "#ff8f77"
   extensions:
   - .slim
+  tm_scope: text.slim
   ace_mode: text
 
 Smali:
@@ -3716,7 +3727,9 @@ YAML:
   - .yml
   - .reek
   - .rviz
+  - .syntax
   - .yaml
+  - .yaml-tmlanguage
   ace_mode: yaml
 
 Yacc:
@@ -3821,8 +3834,13 @@ wisp:
 xBase:
   type: programming
   color: "#403a40"
+  aliases:
+  - advpl
+  - clipper
+  - foxpro
   extensions:
   - .prg
   - .ch
+  - .prw
   tm_scope: source.harbour
   ace_mode: text
