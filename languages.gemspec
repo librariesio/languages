@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Languages::VERSION
   spec.authors       = ["Andrew Nesbitt"]
   spec.email         = ["andrewnez@gmail.com"]
-  spec.summary       = "Github language details and colors"
+  spec.summary       = "GitHub language details and colors"
   spec.description   = "Just the language names, details and colors from github-linguist"
   spec.homepage      = "https://github.com/librariesio/languages"
   spec.license       = "MIT"
