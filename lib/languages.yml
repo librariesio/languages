@@ -8,7 +8,8 @@
 #                     Use "text" if a mode does not exist.
 # wrap              - Boolean wrap to enable line wrapping (default: false)
 # extensions        - An Array of associated extensions (the first one is
-#                     considered the primary extension)
+#                     considered the primary extension, the others should be
+#                     listed alphabetically)
 # interpreters      - An Array of associated interpreters
 # searchable        - Boolean flag to enable searching (defaults to true)
 # search_term       - Deprecated: Some languages maybe indexed under a
@@ -1028,6 +1029,16 @@ Forth:
   - .fs
   ace_mode: forth
 
+FreeMarker:
+  type: programming
+  color: "#0050b2"
+  aliases:
+  - ftl
+  extensions:
+  - .ftl
+  tm_scope: text.html.ftl
+  ace_mode: ftl
+
 Frege:
   type: programming
   color: "#00cafe"
@@ -1322,6 +1333,16 @@ HTML+Django:
   - htmldjango
   ace_mode: django
 
+HTML+EEX:
+  type: markup
+  tm_scope: text.html.elixir
+  group: HTML
+  aliases:
+  - eex
+  extensions:
+  - .eex
+  ace_mode: text
+
 HTML+ERB:
   type: markup
   tm_scope: text.html.erb
@@ -1331,7 +1352,7 @@ HTML+ERB:
   extensions:
   - .erb
   - .erb.deface
-  ace_mode: html_ruby
+  ace_mode: text
 
 HTML+PHP:
   type: markup
@@ -1680,6 +1701,7 @@ KiCad:
   type: programming
   extensions:
   - .sch
+  - .brd
   - .kicad_pcb
   tm_scope: none
   ace_mode: text
@@ -2062,6 +2084,14 @@ Mercury:
   tm_scope: source.mercury
   ace_mode: prolog
 
+Metal:
+  type: programming
+  color: "#8f14e9"
+  extensions:
+  - .metal
+  tm_scope: source.c++
+  ace_mode: c_cpp
+
 MiniD: # Legacy
   type: programming
   searchable: false
@@ -2440,6 +2470,7 @@ PHP:
   - .php3
   - .php4
   - .php5
+  - .phps
   - .phpt
   filenames:
   - Phakefile
@@ -2456,6 +2487,7 @@ PLSQL:
   color: "#dad8d8"
   extensions:
   - .pls
+  - .pck
   - .pkb
   - .pks
   - .plb
@@ -3441,6 +3473,7 @@ TypeScript:
   - ts
   extensions:
   - .ts
+  - .tsx
   tm_scope: source.ts
   ace_mode: typescript
 
@@ -3657,6 +3690,7 @@ XML:
   - .tmSnippet
   - .tmTheme
   - .ts
+  - .tsx
   - .ui
   - .urdf
   - .vbproj
