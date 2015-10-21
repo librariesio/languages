@@ -11,6 +11,7 @@ module Languages
     @index           = {}
     @name_index      = {}
     @alias_index     = {}
+    @extension_index = {}
 
     # Valid Languages types
     TYPES = [:data, :markup, :programming, :prose]
@@ -22,6 +23,15 @@ module Languages
     # Returns an array
     def self.by_type(type)
       all.select { |h| h.type == type }
+    end
+
+    # Detect languages by a specific extension
+    #
+    # extension - An extension for the file (.ruby)
+    #
+    # Returns an array
+    def self.by_extension(extension)
+      @extension_index[extension.downcase]
     end
 
     # Internal: Create a new Language object
@@ -56,6 +66,7 @@ module Languages
           raise ArgumentError, "Extension is missing a '.': #{extension.inspect}"
         end
 
+        @extension_index[extension] ||= []
         @extension_index[extension] << language
       end
 
@@ -403,7 +414,8 @@ module Languages
       :group_name        => options['group'],
       :searchable        => options.fetch('searchable', true),
       :search_term       => options['search_term'],
-      :popular           => popular.include?(name)
+      :popular           => popular.include?(name),
+      :extensions        => options['extensions']
     )
   end
 end
