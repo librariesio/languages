@@ -24,6 +24,8 @@ Or install it yourself as:
 Languages::Language['ruby'] #=> <Languages::Language name=Ruby color=#701516>
 
 Languages::Language.all #=> [#<Languages::Language name=ActionScript color=#e3491a>, ..]
+
+Languages::Language.by_extension('.rb')  #=> <Languages::Language name=Ruby color=#701516>
 ```
 
 ## Testing
