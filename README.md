@@ -26,6 +26,12 @@ Languages::Language['ruby'] #=> <Languages::Language name=Ruby color=#701516>
 Languages::Language.all #=> [#<Languages::Language name=ActionScript color=#e3491a>, ..]
 ```
 
+## Testing
+
+Run the tests with:
+
+    $ bundle exec rake
+
 ## Contributing
 
 1. Fork it ( https://github.com/librariesio/languages/fork )
