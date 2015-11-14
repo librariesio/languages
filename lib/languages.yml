@@ -720,7 +720,7 @@ Cython:
 
 D:
   type: programming
-  color: "#fcd46d"
+  color: "#ba595e"
   extensions:
   - .d
   - .di
@@ -1328,6 +1328,7 @@ HTML+Django:
   - .mustache
   - .jinja
   aliases:
+  - django
   - html+django/jinja
   - html+jinja
   - htmldjango
@@ -1610,7 +1611,7 @@ Jade:
   type: markup
   extensions:
   - .jade
-  tm_scope: source.jade
+  tm_scope: text.jade
   ace_mode: jade
 
 Jasmin:
@@ -1655,6 +1656,7 @@ JavaScript:
   - .gs
   - .jake
   - .jsb
+  - .jscad
   - .jsfl
   - .jsm
   - .jss
@@ -2648,6 +2650,13 @@ PogoScript:
   tm_scope: source.pogoscript
   ace_mode: text
 
+Pony:
+  type: programming
+  extensions:
+  - .pony
+  tm_scope: source.pony
+  ace_mode: text
+
 PostScript:
   type: markup
   extensions:
@@ -3328,9 +3337,12 @@ SuperCollider:
   type: programming
   color: "#46390b"
   extensions:
-  - .scd
   - .sc
-  tm_scope: none
+  - .scd
+  interpreters:
+  - sclang
+  - scsynth
+  tm_scope: source.supercollider
   ace_mode: text
 
 Swift:
@@ -3644,6 +3656,7 @@ XML:
   - .ccxml
   - .clixml
   - .cproject
+  - .csl
   - .csproj
   - .ct
   - .dita
