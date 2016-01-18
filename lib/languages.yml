@@ -142,7 +142,7 @@ Agda:
 
 Alloy:
   type: programming  # 'modeling' would be more appropiate
-  color: "#cc5c24"
+  color: "#64C800"
   extensions:
   - .als
   ace_mode: text
@@ -541,6 +541,14 @@ Clean:
   tm_scope: none
   ace_mode: text
 
+Click:
+  type: programming
+  color: "#E4E6F3"
+  extensions:
+  - .click
+  tm_scope: source.click
+  ace_mode: text
+
 Clojure:
   type: programming
   ace_mode: clojure
@@ -887,6 +895,8 @@ Elixir:
   ace_mode: elixir
   filenames:
   - mix.lock
+  interpreters:
+  - elixir
 
 Elm:
   type: programming
@@ -1500,7 +1510,7 @@ Inform 7:
   extensions:
   - .ni
   - .i7x
-  tm_scope: source.Inform7
+  tm_scope: source.inform7
   aliases:
   - i7
   - inform7
@@ -1693,6 +1703,18 @@ Julia:
   - .jl
   color: "#a270ba"
   ace_mode: julia
+
+Jupyter Notebook:
+  type: markup
+  ace_mode: json
+  tm_scope: source.json
+  color: "#DA5B0B"
+  extensions:
+  - .ipynb
+  filenames:
+  - Notebook
+  aliases:
+  - IPython Notebook
 
 KRL:
   type: programming
@@ -1956,6 +1978,15 @@ M:
   tm_scope: source.lisp
   ace_mode: lisp
 
+MAXScript:
+  type: programming
+  color: "#00a6a6"
+  extensions:
+  - .ms
+  - .mcr
+  tm_scope: source.maxscript
+  ace_mode: text
+
 MTML:
   type: markup
   color: "#b7e1f4"
@@ -2030,6 +2061,7 @@ Mathematica:
   - .cdf
   - .m
   - .ma
+  - .mt
   - .nb
   - .nbp
   - .wl
@@ -2041,6 +2073,8 @@ Mathematica:
 Matlab:
   type: programming
   color: "#bb92ac"
+  aliases:
+  - octave
   extensions:
   - .matlab
   - .m
@@ -2074,6 +2108,7 @@ MediaWiki:
   wrap: true
   extensions:
   - .mediawiki
+  - .wiki
   tm_scope: text.html.mediawiki
   ace_mode: text
 
@@ -2950,6 +2985,17 @@ Redcode:
   tm_scope: none
   ace_mode: text
 
+Ren'Py:
+  type: programming
+  group: Python
+  aliases:
+  - renpy
+  color: "#ff7f7f"
+  extensions:
+  - .rpy
+  tm_scope: source.renpy
+  ace_mode: python
+
 RenderScript:
   type: programming
   extensions:
@@ -3035,6 +3081,7 @@ Rust:
   color: "#dea584"
   extensions:
   - .rs
+  - .rs.in
   ace_mode: rust
 
 SAS:
@@ -3310,6 +3357,14 @@ Squirrel:
   tm_scope: source.c++
   ace_mode: c_cpp
 
+Stan:
+  type: programming
+  color: "#b2011d"
+  extensions:
+  - .stan
+  ace_mode: text
+  tm_scope: source.stan
+
 Standard ML:
   type: programming
   color: "#dc566d"
@@ -3528,6 +3583,17 @@ UnrealScript:
   - .uc
   tm_scope: source.java
   ace_mode: java
+
+UrWeb:
+  type: programming
+  aliases:
+  - Ur/Web
+  - Ur
+  extensions:
+  - .ur
+  - .urs
+  tm_scope: source.ur
+  ace_mode: text
 
 VCL:
   group: Perl
@@ -3910,6 +3976,8 @@ reStructuredText:
   extensions:
   - .rst
   - .rest
+  - .rest.txt
+  - .rst.txt
   ace_mode: text
 
 wisp:
