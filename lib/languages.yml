@@ -475,6 +475,13 @@ CSS:
   extensions:
   - .css
 
+CSV:
+  type: data
+  ace_mode: text
+  tm_scope: none
+  extensions:
+  - .csv
+
 Cap'n Proto:
   type: programming
   tm_scope: source.capnp
@@ -2029,6 +2036,8 @@ Makefile:
   - GNUmakefile
   - Kbuild
   - Makefile
+  - Makefile.am
+  - Makefile.in
   - Makefile.inc
   - makefile
   interpreters:
@@ -2555,6 +2564,16 @@ PLpgSQL:
   extensions:
   - .sql
 
+POV-Ray SDL:
+  type: programming
+  aliases:
+  - pov-ray
+  - povray
+  extensions:
+  - .pov
+  - .inc
+  ace_mode: text
+
 Pan:
   type: programming
   color: '#cc0000'
@@ -2749,8 +2768,10 @@ Prolog:
   - .pl
   - .pro
   - .prolog
+  - .yap
   interpreters:
   - swipl
+  - yap
   tm_scope: source.prolog
   ace_mode: prolog
 
@@ -2820,6 +2841,7 @@ Python:
   color: "#3572A5"
   extensions:
   - .py
+  - .bzl
   - .cgi
   - .fcgi
   - .gyp
@@ -3274,6 +3296,7 @@ Shell:
   color: "#89e051"
   aliases:
   - sh
+  - shell-script
   - bash
   - zsh
   extensions:
@@ -3284,6 +3307,7 @@ Shell:
   - .command
   - .fcgi
   - .ksh
+  - .sh.in
   - .tmux
   - .tool
   - .zsh
@@ -3591,6 +3615,13 @@ Unity3D Asset:
   - .unity
   tm_scope: source.yaml
 
+Uno:
+  type: programming
+  extensions:
+  - .uno
+  ace_mode: csharp
+  tm_scope: source.cs
+
 UnrealScript:
   type: programming
   color: "#a54c4d"
@@ -3797,6 +3828,7 @@ XML:
   - .tsx
   - .ui
   - .urdf
+  - .ux
   - .vbproj
   - .vcxproj
   - .vxml
