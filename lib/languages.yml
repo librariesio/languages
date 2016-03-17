@@ -1290,6 +1290,7 @@ Groff:
   - '.8'
   - '.9'
   - .l
+  - .me
   - .ms
   - .n
   - .rno
@@ -1310,6 +1311,8 @@ Groovy:
   - .gvy
   interpreters:
   - groovy
+  filenames:
+  - Jenkinsfile
 
 Groovy Server Pages:
   type: programming
@@ -1329,6 +1332,16 @@ HCL:
     - .tf
   ace_mode: ruby
   tm_scope: source.ruby
+
+HLSL:
+  type: programming
+  extensions:
+    - .hlsl
+    - .fx
+    - .fxh
+    - .hlsli
+  ace_mode: text
+  tm_scope: none
 
 HTML:
   type: markup
@@ -1994,6 +2007,25 @@ M:
   - .m
   tm_scope: source.lisp
   ace_mode: lisp
+
+M4:
+  type: programming
+  extensions:
+  - .m4
+  tm_scope: none
+  ace_mode: text
+
+M4Sugar:
+  type: programming
+  group: M4
+  aliases:
+  - autoconf
+  extensions:
+  - .m4
+  filenames:
+  - configure.ac
+  tm_scope: none
+  ace_mode: text
 
 MAXScript:
   type: programming
@@ -2850,10 +2882,12 @@ Python:
   - .pyp
   - .pyt
   - .pyw
+  - .rpy
   - .tac
   - .wsgi
   - .xpy
   filenames:
+  - BUCK
   - BUILD
   - SConscript
   - SConstruct
@@ -3023,7 +3057,6 @@ Redcode:
 
 Ren'Py:
   type: programming
-  group: Python
   aliases:
   - renpy
   color: "#ff7f7f"
@@ -3540,7 +3573,20 @@ Text:
   extensions:
   - .txt
   - .fr
+  - .nb
   - .ncl
+  - .no
+  filenames:
+  - COPYING
+  - INSTALL
+  - LICENSE
+  - NEWS
+  - README.me
+  - click.me
+  - delete.me
+  - keep.me
+  - read.me
+  - test.me
   tm_scope: none
   ace_mode: text
 
@@ -3807,6 +3853,7 @@ XML:
   - .osm
   - .plist
   - .pluginspec
+  - .props
   - .ps1xml
   - .psc1
   - .pt
@@ -3931,6 +3978,7 @@ YAML:
   - .yml
   - .reek
   - .rviz
+  - .sublime-syntax
   - .syntax
   - .yaml
   - .yaml-tmlanguage
