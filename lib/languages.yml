@@ -1694,6 +1694,7 @@ JavaScript:
   - .js
   - ._js
   - .bones
+  - .es
   - .es6
   - .frag
   - .gs
@@ -2373,7 +2374,7 @@ Nix:
   - .nix
   aliases:
   - nixos
-  tm_scope: none
+  tm_scope: source.nix
   ace_mode: nix
 
 Nu:
