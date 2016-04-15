@@ -772,7 +772,7 @@ DM:
   - .dm
   aliases:
   - byond
-  tm_scope: source.c++
+  tm_scope: source.dm
   ace_mode: c_cpp
 
 DNS Zone:
@@ -1262,6 +1262,14 @@ Graph Modeling Language:
   tm_scope: none
   ace_mode: text
 
+GraphQL:
+  type: data
+  extensions:
+    - .graphql
+  color: "#E535AB"
+  tm_scope: source.graphql
+  ace_mode: text
+
 Graphviz (DOT):
   type: data
   tm_scope: source.dot
@@ -1532,7 +1540,7 @@ Idris:
   - .idr
   - .lidr
   ace_mode: text
-  tm_scope: none
+  tm_scope: source.idris
 
 Inform 7:
   type: programming
@@ -2068,6 +2076,7 @@ Makefile:
   - .mak
   - .d
   - .mk
+  - .mkfile
   filenames:
   - GNUmakefile
   - Kbuild
@@ -2076,6 +2085,7 @@ Makefile:
   - Makefile.in
   - Makefile.inc
   - makefile
+  - mkfile
   interpreters:
   - make
   ace_mode: makefile
