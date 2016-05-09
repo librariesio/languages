@@ -147,6 +147,17 @@ Alloy:
   - .als
   ace_mode: text
 
+Alpine Abuild:
+  type: programming
+  group: Shell
+  aliases:
+  - abuild
+  - apkbuild
+  filenames:
+  - APKBUILD
+  tm_scope: source.shell
+  ace_mode: sh
+
 Ant Build System:
   type: data
   tm_scope: text.xml.ant
@@ -446,7 +457,7 @@ CLIPS:
   type: programming
   extensions:
   - .clp
-  tm_scope: none
+  tm_scope: source.clips
   ace_mode: text
 
 CMake:
@@ -873,6 +884,15 @@ ECLiPSe:
   - .ecl
   tm_scope: source.prolog.eclipse
   ace_mode: prolog
+
+EJS:
+  type: markup
+  color: "#a91e50"
+  group: HTML
+  extensions:
+  - .ejs
+  tm_scope: text.html.js
+  ace_mode: ejs
 
 Eagle:
   type: markup
@@ -1623,9 +1643,11 @@ JSON:
   extensions:
   - .json
   - .geojson
+  - .JSON-tmLanguage
   - .lock
   - .topojson
   filenames:
+  - .arcconfig
   - .jshintrc
   - composer.lock
   - mcmod.info
@@ -2082,6 +2104,7 @@ Makefile:
   - .mk
   - .mkfile
   filenames:
+  - BSDmakefile
   - GNUmakefile
   - Kbuild
   - Makefile
@@ -2521,6 +2544,16 @@ OpenEdge ABL:
   - .cls
   tm_scope: source.abl
   ace_mode: text
+
+OpenRC runscript:
+  type: programming
+  group: Shell
+  aliases:
+  - openrc
+  interpreters:
+  - openrc-run
+  tm_scope: source.shell
+  ace_mode: sh
 
 OpenSCAD:
   type: programming
@@ -3528,6 +3561,13 @@ SystemVerilog:
   - .vh
   ace_mode: verilog
 
+TLA:
+  type: programming
+  extensions:
+  - .tla
+  tm_scope: source.tla
+  ace_mode: text
+
 TOML:
   type: data
   extensions:
@@ -3600,7 +3640,6 @@ Terra:
   - .t
   color: "#00004c"
   ace_mode: lua
-  group: Lua
   interpreters:
   - lua
 
@@ -3829,6 +3868,14 @@ WebIDL:
   extensions:
   - .webidl
   tm_scope: source.webidl
+  ace_mode: text
+
+World of Warcraft Addon Data:
+  type: data
+  color: "#e0b330"
+  extensions:
+  - .toc
+  tm_scope: source.toc
   ace_mode: text
 
 X10:
@@ -4095,6 +4142,8 @@ edn:
 fish:
   type: programming
   group: Shell
+  interpreters:
+  - fish
   extensions:
   - .fish
   tm_scope: source.fish
