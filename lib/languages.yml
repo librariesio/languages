@@ -75,6 +75,10 @@ APL:
   extensions:
   - .apl
   - .dyalog
+  interpreters:
+  - apl
+  - aplx
+  - dyalog
   tm_scope: source.apl
   ace_mode: text
 
@@ -479,6 +483,13 @@ COBOL:
   - .cpy
   ace_mode: cobol
 
+COLLADA:
+  type: data
+  extensions:
+  - .dae
+  tm_scope: text.xml
+  ace_mode: xml
+
 CSS:
   type: markup
   tm_scope: source.css
@@ -694,7 +705,7 @@ Cpp-ObjDump:
   - .cxx-objdump
   tm_scope: objdump.x86asm
   aliases:
-  - c++-objdumb
+  - c++-objdump
   ace_mode: assembly_x86
 
 Creole:
@@ -702,7 +713,7 @@ Creole:
   wrap: true
   extensions:
   - .creole
-  tm_scope: none
+  tm_scope: text.html.creole
   ace_mode: text
 
 Crystal:
@@ -714,6 +725,34 @@ Crystal:
   tm_scope: source.crystal
   interpreters:
   - crystal
+
+Csound:
+  type: programming
+  aliases:
+  - csound-orc
+  extensions:
+  - .orc
+  - .udo
+  tm_scope: source.csound
+  ace_mode: text
+
+Csound Document:
+  type: programming
+  aliases:
+  - csound-csd
+  extensions:
+  - .csd
+  tm_scope: source.csound-document
+  ace_mode: text
+
+Csound Score:
+  type: programming
+  aliases:
+  - csound-sco
+  extensions:
+  - .sco
+  tm_scope: source.csound-score
+  ace_mode: text
 
 Cucumber:
   type: programming
@@ -1044,7 +1083,7 @@ Fantom:
   color: "#dbded5"
   extensions:
   - .fan
-  tm_scope: source.fan
+  tm_scope: none
   ace_mode: text
 
 Filterscript:
@@ -1128,7 +1167,7 @@ GAS:
   extensions:
   - .s
   - .ms
-  tm_scope: none
+  tm_scope: source.assembly
   ace_mode: assembly_x86
 
 GDScript:
@@ -1405,6 +1444,16 @@ HTML+Django:
   - htmldjango
   ace_mode: django
 
+HTML+ECR:
+  type: markup
+  tm_scope: text.html.ecr
+  group: HTML
+  aliases:
+  - ecr
+  extensions:
+  - .ecr
+  ace_mode: text
+
 HTML+EEX:
   type: markup
   tm_scope: text.html.elixir
@@ -1621,6 +1670,8 @@ J:
   color: "#9EEDFF"
   extensions:
   - .ijs
+  interpreters:
+  - jconsole
   tm_scope: source.j
   ace_mode: text
 
@@ -1644,7 +1695,6 @@ JSON:
   - .json
   - .geojson
   - .JSON-tmLanguage
-  - .lock
   - .topojson
   filenames:
   - .arcconfig
@@ -1688,6 +1738,7 @@ Jade:
   type: markup
   extensions:
   - .jade
+  - .pug
   tm_scope: text.jade
   ace_mode: jade
 
@@ -2113,6 +2164,7 @@ Makefile:
   - Makefile.in
   - Makefile.inc
   - makefile
+  - makefile.sco
   - mkfile
   interpreters:
   - make
@@ -2424,7 +2476,7 @@ Nu:
   - .nu
   filenames:
   - Nukefile
-  tm_scope: source.scheme
+  tm_scope: source.nu
   ace_mode: scheme
   interpreters:
   - nush
@@ -3659,6 +3711,7 @@ Text:
   - INSTALL
   - LICENSE
   - NEWS
+  - README.1ST
   - README.me
   - click.me
   - delete.me
@@ -3854,6 +3907,20 @@ Vue:
   - .vue
   tm_scope: text.html.vue
   ace_mode: html
+
+Wavefront Material:
+  type: data
+  extensions:
+  - .mtl
+  tm_scope: source.wavefront.mtl
+  ace_mode: text
+
+Wavefront Object:
+  type: data
+  extensions:
+  - .obj
+  tm_scope: source.wavefront.obj
+  ace_mode: text
 
 Web Ontology Language:
   type: markup
