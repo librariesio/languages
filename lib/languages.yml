@@ -571,7 +571,7 @@ Clean:
   extensions:
   - .icl
   - .dcl
-  tm_scope: none
+  tm_scope: source.clean
   ace_mode: text
 
 Click:
@@ -860,6 +860,8 @@ Dart:
   color: "#00B4AB"
   extensions:
   - .dart
+  interpreters:
+  - dart
   ace_mode: dart
 
 Diff:
@@ -904,6 +906,8 @@ E:
   color: "#ccce35"
   extensions:
   - .E
+  interpreters:
+  - rune
   tm_scope: none
   ace_mode: text
 
@@ -932,6 +936,14 @@ EJS:
   - .ejs
   tm_scope: text.html.js
   ace_mode: ejs
+
+EQ:
+  type: programming
+  color: "#a78649"
+  extensions:
+  - .eq
+  tm_scope: source.cs
+  ace_mode: csharp
 
 Eagle:
   type: markup
@@ -1342,6 +1354,7 @@ Graphviz (DOT):
 
 Groff:
   type: markup
+  color: "#ecdebe"
   extensions:
   - .man
   - '.1'
@@ -1535,6 +1548,8 @@ Haskell:
   extensions:
   - .hs
   - .hsc
+  interpreters:
+  - runhaskell
   ace_mode: haskell
 
 Haxe:
@@ -1638,6 +1653,8 @@ Io:
   color: "#a9188d"
   extensions:
   - .io
+  interpreters:
+  - io
   ace_mode: io
 
 Ioke:
@@ -2507,6 +2524,7 @@ OCaml:
   interpreters:
   - ocaml
   - ocamlrun
+  - ocamlscript
   tm_scope: source.ocaml
 
 ObjDump:
@@ -2769,7 +2787,10 @@ Pascal:
   - .dpr
   - .inc
   - .lpr
+  - .pascal
   - .pp
+  interpreters:
+  - instantfpc
   ace_mode: pascal
 
 Perl:
@@ -3336,6 +3357,14 @@ SQLPL:
   - .sql
   - .db2
 
+SRecode Template:
+  type: markup
+  color: "#348a34"
+  tm_scope: source.lisp
+  ace_mode: lisp
+  extensions:
+  - .srt
+
 STON:
   type: data
   group: Smalltalk
@@ -3412,6 +3441,9 @@ Scheme:
   - guile
   - bigloo
   - chicken
+  - csi
+  - gosh
+  - r6rs
   ace_mode: scheme
 
 Scilab:
@@ -3585,6 +3617,13 @@ Stylus:
   tm_scope: source.stylus
   ace_mode: stylus
 
+SubRip Text:
+  type: data
+  extensions:
+  - .srt
+  ace_mode: text
+  tm_scope: text.srt
+
 SuperCollider:
   type: programming
   color: "#46390b"
@@ -3738,11 +3777,11 @@ Thrift:
 
 Turing:
   type: programming
-  color: "#45f715"
+  color: "#cf142b"
   extensions:
   - .t
   - .tu
-  tm_scope: none
+  tm_scope: source.turing
   ace_mode: text
 
 Turtle:
