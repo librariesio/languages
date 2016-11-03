@@ -49,6 +49,13 @@ ABAP:
   - ".abap"
   ace_mode: abap
   language_id: 1
+ABNF:
+  type: data
+  ace_mode: text
+  extensions:
+  - ".abnf"
+  tm_scope: source.abnf
+  language_id: 429
 AGS Script:
   type: programming
   color: "#B9D9FF"
@@ -1022,6 +1029,15 @@ E:
   tm_scope: none
   ace_mode: text
   language_id: 92
+EBNF:
+  type: data
+  extensions:
+  - ".ebnf"
+  tm_scope: source.ebnf
+  ace_mode: text
+  codemirror_mode: ebnf
+  codemirror_mime_type: text/x-ebnf
+  language_id: 430
 ECL:
   type: programming
   color: "#8a1267"
@@ -1837,6 +1853,8 @@ IRC log:
   - ".weechatlog"
   tm_scope: none
   ace_mode: text
+  codemirror_mode: mirc
+  codemirror_mime_type: text/mirc
   language_id: 164
 Idris:
   type: programming
@@ -2053,6 +2071,8 @@ Julia:
   type: programming
   extensions:
   - ".jl"
+  interpreters:
+  - julia
   color: "#a270ba"
   ace_mode: julia
   codemirror_mode: julia
@@ -2383,6 +2403,24 @@ MAXScript:
   tm_scope: source.maxscript
   ace_mode: text
   language_id: 217
+MQL4:
+  type: programming
+  color: "#62A8D6"
+  extensions:
+  - ".mq4"
+  - ".mqh"
+  tm_scope: source.mql5
+  ace_mode: c_cpp
+  language_id: 426
+MQL5:
+  type: programming
+  color: "#4A76B8"
+  extensions:
+  - ".mq5"
+  - ".mqh"
+  tm_scope: source.mql5
+  ace_mode: c_cpp
+  language_id: 427
 MTML:
   type: markup
   color: "#b7e1f4"
@@ -2423,6 +2461,7 @@ Makefile:
   - Kbuild
   - Makefile
   - Makefile.am
+  - Makefile.boot
   - Makefile.frag
   - Makefile.in
   - Makefile.inc
@@ -3130,6 +3169,17 @@ Perl6:
   codemirror_mode: perl
   codemirror_mime_type: text/x-perl
   language_id: 283
+Pic:
+  type: markup
+  group: Groff
+  tm_scope: "source.pic"
+  extensions:
+  - ".pic"
+  - ".chem"
+  ace_mode: text
+  codemirror_mode: troff
+  codemirror_mime_type: text/troff
+  language_id: 425
 Pickle:
   type: data
   extensions:
@@ -3272,6 +3322,8 @@ Public Key:
   - ".pub"
   tm_scope: none
   ace_mode: text
+  codemirror_mode: asciiarmor
+  codemirror_mime_type: application/pgp
   language_id: 298
 Puppet:
   type: programming
@@ -3348,6 +3400,15 @@ Python:
   aliases:
   - rusthon
   language_id: 303
+Python console:
+  type: programming
+  group: Python
+  searchable: false
+  aliases:
+  - pycon
+  tm_scope: text.python.console
+  ace_mode: text
+  language_id: 428
 Python traceback:
   type: data
   group: Python
@@ -3432,6 +3493,9 @@ REXX:
   - ".rexx"
   - ".pprx"
   - ".rex"
+  interpreters:
+  - regina
+  - rexx
   tm_scope: source.rexx
   ace_mode: text
   language_id: 311
