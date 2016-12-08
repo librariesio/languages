@@ -19,7 +19,7 @@
 # language_id       - Integer used as a language-name-independent indexed field so that we can rename
 #                     languages in Linguist without reindexing all the code on GitHub. Must not be
 #                     changed for existing languages without the explicit permission of GitHub staff.
-# color             - CSS hex color to represent the language. Only used if type is "programming" or "prose"
+# color             - CSS hex color to represent the language. Only used if type is "programming" or "prose".
 # tm_scope          - The TextMate scope that represents this programming
 #                     language. This should match one of the scopes listed in
 #                     the grammars.yml file. Use "none" if there is no grammar
@@ -1141,9 +1141,9 @@ Emacs Lisp:
   - ".gnus"
   - ".spacemacs"
   - ".viper"
-  - "Project.ede"
-  - "_emacs"
-  - "abbrev_defs"
+  - Project.ede
+  - _emacs
+  - abbrev_defs
   extensions:
   - ".el"
   - ".emacs"
@@ -1393,6 +1393,18 @@ GLSL:
   - ".vshader"
   ace_mode: glsl
   language_id: 124
+GN:
+  type: data
+  extensions:
+  - ".gn"
+  - ".gni"
+  interpreters:
+  - gn
+  tm_scope: source.gn
+  ace_mode: python
+  codemirror_mode: python
+  codemirror_mime_type: text/x-python
+  language_id: 302957008
 Game Maker Language:
   type: programming
   color: "#8fb200"
@@ -1473,6 +1485,8 @@ Gnuplot:
 Go:
   type: programming
   color: "#375eab"
+  aliases:
+  - golang
   extensions:
   - ".go"
   ace_mode: golang
@@ -1659,13 +1673,16 @@ HTML+Django:
   tm_scope: text.html.django
   group: HTML
   extensions:
-  - ".mustache"
   - ".jinja"
+  - ".mustache"
+  - ".njk"
   aliases:
   - django
   - html+django/jinja
   - html+jinja
   - htmldjango
+  - njk
+  - nunjucks
   ace_mode: django
   codemirror_mode: django
   codemirror_mime_type: text/x-django
@@ -1959,6 +1976,8 @@ JSON5:
   type: data
   extensions:
   - ".json5"
+  filenames:
+  - ".babelrc"
   tm_scope: source.js
   ace_mode: javascript
   codemirror_mode: javascript
@@ -2953,6 +2972,15 @@ OpenSCAD:
   - ".scad"
   tm_scope: none
   ace_mode: scad
+  language_id: 431
+OpenType Feature File:
+  type: data
+  aliases:
+  - AFDKO
+  extensions:
+  - ".fea"
+  tm_scope: source.opentype
+  ace_mode: text
   language_id: 266
 Org:
   type: prose
@@ -3017,6 +3045,8 @@ PHP:
   - ".phps"
   - ".phpt"
   filenames:
+  - ".php_cs"
+  - ".php_cs.dist"
   - Phakefile
   interpreters:
   - php
@@ -3172,7 +3202,7 @@ Perl6:
 Pic:
   type: markup
   group: Groff
-  tm_scope: "source.pic"
+  tm_scope: source.pic
   extensions:
   - ".pic"
   - ".chem"
@@ -3376,7 +3406,9 @@ Python:
   - ".cgi"
   - ".fcgi"
   - ".gyp"
+  - ".gypi"
   - ".lmi"
+  - ".py3"
   - ".pyde"
   - ".pyp"
   - ".pyt"
@@ -3387,6 +3419,7 @@ Python:
   - ".wsgi"
   - ".xpy"
   filenames:
+  - .gclient
   - BUCK
   - BUILD
   - SConscript
@@ -3565,6 +3598,14 @@ Ragel in Ruby Host:
   tm_scope: none
   ace_mode: text
   language_id: 317
+Rascal:
+  type: programming
+  color: "#fffaa0"
+  extensions:
+  - ".rsc"
+  tm_scope: source.rascal
+  ace_mode: text
+  language_id: 173616037
 Raw token data:
   type: data
   search_term: raw
@@ -3685,6 +3726,7 @@ Ruby:
   - Berksfile
   - Brewfile
   - Buildfile
+  - Dangerfile
   - Deliverfile
   - Fastfile
   - Gemfile
@@ -4025,6 +4067,13 @@ SourcePawn:
   - ".sma"
   tm_scope: source.sp
   ace_mode: text
+  language_id: 432
+Spline Font Database:
+  type: data
+  extensions:
+  - ".sfd"
+  tm_scope: text.sfd
+  ace_mode: yaml
   language_id: 354
 Squirrel:
   type: programming
@@ -4256,6 +4305,7 @@ Text:
   - ".no"
   filenames:
   - COPYING
+  - FONTLOG
   - INSTALL
   - LICENSE
   - NEWS
